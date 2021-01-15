@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<style>
+		.big-div {
+			height: 620px;
+			width: 800px;
+		}
+		.big-div-2 {
+			height: 620px;
+			width: 800px;
+		}
+		.mx-auto {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.img {
+			height: 300px;
+			width: 800px;
+			background-color: red;
+		}
+		.img-2 {
+			height: 400px;
+			width: 800px;
+			background-color: red;
+		}
+		.ans1 {
+			height: 50px;
+			width: 800px;
+			background-color: white;
+		}
+		.ans2 {
+			height: 50px;
+			width: 800px;
+			background-color: gray;
+		}
+		.ans3 {
+			height: 50px;
+			width: 800px;
+			background-color: white;
+		}
+		.ans4 {
+			height: 50px;
+			width: 800px;
+			background-color: gray;
+		}
+		.ans5 {
+			height: 50px;
+			width: 800px;
+			background-color: white;
+		}
+		.ans6 {
+			height: 50px;
+			width: 800px;
+			background-color: gray;
+		}
+		.vopros {
+			height: 70px;
+			width: 800px;
+			background-color: orange;
+		}
+		.lvl-1{}
+		.lvl-2{
+			display: none;
+		}
+		.arial {
+			font-family: Arial;
+		}
+	</style>
+</head>
+<body>
+<div class="lvl-1">	
+	<div class="big-div mx-auto">
+		<div class="img">
+			<img src="map.jpg" class="img">
+		</div>
+		<div class="vopros">
+			<h1 class="arial">Какая страна самая большая?</h1>
+		</div>
+		<div class="ans1">
+			<h2 class="arial">США</h2>
+		</div>
+		<div class="ans2">
+			<h2 class="arial">Канада</h2>
+		</div>
+		<div class="ans3">
+			<h2 class="arial">Россия</h2>
+		</div>
+	</div>
+</div>
+<div class="lvl-2">	
+	<div class="big-div-2 mx-auto">
+		<div class="img">
+			<img src="rus.jpg" class="img">
+		</div>
+		<div class="vopros">
+			<h1 class="arial">Какой страной или частью страны была Россия?</h1>
+		</div>
+		<div class="ans4">
+			<h2 class="arial">СССР</h2>
+		</div>
+		<div class="ans5">
+			<h2 class="arial">Колония Великобритании</h2>
+		</div>
+		<div class="ans6">
+			<h2 class="arial">Монголия</h2>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript">
+		document.querySelector(".ans1").onclick = function(){
+			alert("Неправильно!");
+		}
+		document.querySelector(".ans2").onclick = function(){
+			alert("Неправильно!");
+		}
+		document.querySelector(".ans3").onclick = function(){
+			alert("Правильно!");
+			document.querySelector(".lvl-1").style.display = "none";
+			document.querySelector(".lvl-2").style.display = "block";
+		}
+		document.querySelector(".ans4").onclick = function(){
+			alert("Правильно!");
+			document.querySelector(".lvl-2").style.display = "none";
+			document.querySelector(".lvl-1").style.display = "block";
+		}
+		document.querySelector(".ans5").onclick = function(){
+			alert("Неправильно!");
+		}
+		document.querySelector(".ans6").onclick = function(){
+			alert("Неправильно!");
+		}
+	</script>
+</body>
+</html>
